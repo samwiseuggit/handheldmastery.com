@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tamaduni/://handheldmastery.com
+    - /bin/cp -R * $DEPLOYPATH
