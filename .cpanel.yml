@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - find /home/tamaduni/repositories/handheldmastery/mpa_dist -type d -exec chmod 755 {} \;
+    - find /home/tamaduni/repositories/handheldmastery/mpa_dist -type f -exec chmod 644 {} \;
