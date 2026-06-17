@@ -1,130 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="How to Connect to a 4K TV: Best Settings for Docked Mode Gaming — Technical article from Hand Held Mastery.">
-<link rel="icon" type="image/png" href="../favicon.png">
-<title>How to Connect to a 4K TV: Best Settings for Docked Mode Gaming | Hand Held Mastery</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#020617;color:#f1f5f9;line-height:1.7}
-a{color:#22d3ee;text-decoration:none}a:hover{color:#67e8f9}
-img{max-width:100%;height:auto}
-
-/* Navbar */
-.navbar{position:sticky;top:0;z-index:50;background:rgba(15,23,42,0.95);backdrop-filter:blur(12px);border-bottom:1px solid #1e293b}
-.navbar-inner{max-width:1280px;margin:0 auto;padding:0 12px;display:flex;align-items:center;justify-content:space-between;height:80px}
-.navbar-logo img{height:64px;width:auto}
-.navbar-links{display:flex;gap:2px}
-.navbar-links a{padding:8px 12px;border-radius:6px;font-size:14px;font-weight:500;color:#94a3b8;transition:all 0.15s}
-.navbar-links a:hover{color:#fff;background:#1e293b}
-.navbar-links a.active{color:#22d3ee;background:rgba(34,211,238,0.1)}
-.mobile-toggle{display:none;background:none;border:none;color:#94a3b8;cursor:pointer;padding:8px}
-
-/* Article */
-.article-container{max-width:800px;margin:0 auto;padding:48px 24px}
-.article-meta{display:flex;align-items:center;gap:16px;margin-bottom:24px;flex-wrap:wrap}
-.article-category{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;padding:4px 10px;border-radius:9999px;border:1px solid rgba(52,211,153,0.2);color:#34d399;background:rgba(52,211,153,0.1)}
-.article-meta-text{font-size:13px;color:#64748b}
-.article-title{font-size:32px;font-weight:800;line-height:1.2;margin-bottom:16px;color:#fff}
-@media(min-width:640px){.article-title{font-size:40px}}
-
-/* Markdown content */
-.article-content h2{font-size:24px;font-weight:700;margin-top:40px;margin-bottom:16px;color:#fff;padding-bottom:8px;border-bottom:1px solid #1e293b}
-.article-content h3{font-size:18px;font-weight:600;margin-top:28px;margin-bottom:12px;color:#e2e8f0}
-.article-content h4{font-size:16px;font-weight:600;margin-top:20px;margin-bottom:8px;color:#cbd5e1}
-.article-content p{margin-bottom:16px;color:#cbd5e1}
-.article-content ul,.article-content ol{margin-bottom:16px;padding-left:24px}
-.article-content li{margin-bottom:6px;color:#cbd5e1}
-.article-content strong{color:#fff}
-.article-content table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
-.article-content th{background:#1e293b;padding:10px 12px;text-align:left;font-weight:600;color:#94a3b8;border-bottom:2px solid #334155}
-.article-content td{padding:8px 12px;border-bottom:1px solid #1e293b;color:#cbd5e1}
-.article-content tr:hover td{background:rgba(30,41,59,0.5)}
-.article-content blockquote{border-left:3px solid #22d3ee;padding-left:16px;margin:20px 0;color:#94a3b8;font-style:italic}
-.article-content code{background:#1e293b;padding:2px 6px;border-radius:4px;font-size:13px;color:#22d3ee}
-.article-content pre{background:#0f172a;padding:16px;border-radius:8px;overflow-x:auto;margin:16px 0;border:1px solid #1e293b}
-.article-content pre code{background:none;padding:0;color:#cbd5e1}
-.article-content hr{border:none;border-top:1px solid #1e293b;margin:32px 0}
-
-/* Back navigation */
-.back-nav{display:flex;align-items:center;gap:8px;margin-bottom:24px;font-size:14px;color:#94a3b8}
-.back-nav a:hover{color:#22d3ee}
-
-/* CTA */
-.article-cta{background:linear-gradient(135deg,rgba(109,40,217,0.15),rgba(8,145,178,0.15));border:1px solid #1e293b;border-radius:16px;padding:32px;text-align:center;margin-top:48px}
-.article-cta h3{font-size:20px;font-weight:700;color:#fff;margin-bottom:8px}
-.article-cta p{color:#94a3b8;margin-bottom:20px}
-.cta-btn{display:inline-flex;align-items:center;gap:8px;background:#7c3aed;color:#fff;font-weight:600;padding:12px 24px;border-radius:8px;transition:background 0.15s}
-.cta-btn:hover{background:#8b5cf6}
-
-/* Footer */
-.footer{background:#0f172a;border-top:1px solid #1e293b;margin-top:auto}
-.footer-inner{max-width:1280px;margin:0 auto;padding:32px 24px}
-.footer-grid{display:grid;grid-template-columns:1fr;gap:32px}
-@media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr 1fr}}
-.footer h4{color:#fff;font-weight:600;margin-bottom:12px}
-.footer a{display:block;color:#64748b;font-size:14px;margin-bottom:8px;transition:color 0.15s}
-.footer a:hover{color:#22d3ee}
-.footer-bottom{border-top:1px solid #1e293b;margin-top:32px;padding-top:24px;text-align:center;color:#475569;font-size:13px}
-
-/* Related */
-.related-section{margin-top:48px}
-.related-section h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:16px}
-.related-grid{display:grid;grid-template-columns:1fr;gap:12px}
-@media(min-width:640px){.related-grid{grid-template-columns:1fr 1fr}}
-.related-card{display:block;background:#0f172a;border:1px solid #1e293b;border-radius:12px;padding:16px;transition:border-color 0.15s}
-.related-card:hover{border-color:rgba(124,58,237,0.4)}
-.related-card-title{font-size:14px;font-weight:600;color:#fff;margin-bottom:4px}
-.related-card-title:hover{color:#22d3ee}
-.related-card-desc{font-size:12px;color:#64748b}
-
-/* Mobile */
-@media(max-width:767px){
-  .navbar-links{display:none;position:absolute;top:80px;left:0;right:0;background:rgba(15,23,42,0.98);padding:12px;flex-direction:column;border-bottom:1px solid #1e293b}
-  .navbar-links.open{display:flex}
-  .navbar-links a{padding:10px 16px}
-  .mobile-toggle{display:block}
-  .navbar-inner{height:72px}
-  .navbar-logo img{height:52px}
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dock selection, resolution scaling, controller pairing." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="author" content="Hand Held Mastery" />
+  <meta property="og:title" content="How to Connect to a 4K TV: Best Settings for Docked Mode Gaming" />
+  <meta property="og:description" content="Dock selection, resolution scaling, controller pairing." />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Hand Held Mastery" />
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <title>How to Connect to a 4K TV: Best Settings for Docked Mode Gaming — Hand Held Mastery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      slate: { 950: "#020617", 900: "#0f172a", 800: "#1e293b", 700: "#334155", 600: "#475569", 500: "#64748b", 400: "#94a3b8", 300: "#cbd5e1" }
+    } } } }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    .article-content h1 { font-size: 1.875rem; font-weight: 800; color: white; margin: 2rem 0 1rem; line-height: 1.2; }
+    .article-content h2 { font-size: 1.5rem; font-weight: 700; color: #22d3ee; margin: 2rem 0 0.75rem; line-height: 1.3; border-bottom: 1px solid #1e293b; padding-bottom: 0.5rem; }
+    .article-content h3 { font-size: 1.25rem; font-weight: 700; color: #a78bfa; margin: 1.5rem 0 0.5rem; }
+    .article-content h4 { font-size: 1.125rem; font-weight: 600; color: #e2e8f0; margin: 1.25rem 0 0.5rem; }
+    .article-content p { color: #94a3b8; margin-bottom: 1rem; line-height: 1.75; }
+    .article-content ul, .article-content ol { color: #94a3b8; margin-bottom: 1rem; padding-left: 1.5rem; }
+    .article-content li { margin-bottom: 0.5rem; line-height: 1.7; }
+    .article-content ul li { list-style-type: disc; }
+    .article-content ol li { list-style-type: decimal; }
+    .article-content strong { color: #e2e8f0; font-weight: 600; }
+    .article-content a { color: #22d3ee; text-decoration: none; }
+    .article-content a:hover { text-decoration: underline; }
+    .article-content blockquote { border-left: 3px solid #a78bfa; padding-left: 1rem; margin: 1.5rem 0; color: #cbd5e1; font-style: italic; }
+    .article-content code { background: #1e293b; color: #22d3ee; padding: 0.125rem 0.375rem; border-radius: 0.25rem; font-size: 0.875rem; }
+    .article-content pre { background: #0f172a; border: 1px solid #1e293b; border-radius: 0.5rem; padding: 1rem; overflow-x: auto; margin: 1rem 0; }
+    .article-content pre code { background: none; padding: 0; color: #94a3b8; }
+    .article-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.875rem; }
+    .article-content th { background: #1e293b; color: #e2e8f0; font-weight: 600; text-align: left; padding: 0.625rem 0.875rem; border-bottom: 2px solid #334155; }
+    .article-content td { color: #94a3b8; padding: 0.625rem 0.875rem; border-bottom: 1px solid #1e293b; }
+    .article-content tr:hover td { background: #0f172a; }
+    .article-content img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0; }
+    .article-content hr { border: none; border-top: 1px solid #1e293b; margin: 2rem 0; }
+    .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #020617; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+  </style>
 </head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="navbar-inner">
-    <a href="../index.html" class="navbar-logo"><img src="../logo.png" alt="Hand Held Mastery" loading="eager"></a>
-    <div class="navbar-links" id="navLinks">
-      <a href="../index.html">Home</a>
-      <a href="../compare.html">Compare</a>
-      <a href="../blog.html" class="active">Blog</a>
-      <a href="../toolbox.html">Toolbox</a>
-      <a href="../monetization.html">Monetization</a>
-      <a href="../sitemap.html">Sitemap</a>
+<body class="bg-slate-950 min-h-screen flex flex-col">
+  <div style="display:none" aria-hidden="true"><script src="https://pl29763343.effectivecpmnetwork.com/fa/c5/2e/fac52e793a9842c90f533b5380ed1dbc.js"></script></div>
+  <nav class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
+      <div class="flex items-center justify-between h-20 sm:h-24">
+        <a href="../index.html" class="flex items-center shrink-0 -ml-1">
+          <img src="../logo.png" alt="Hand Held Mastery" class="h-16 sm:h-20 w-auto object-contain" loading="eager" />
+        </a>
+        <div class="hidden md:flex items-center gap-0.5">
+          <a href="../index.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Home</a>
+          <a href="../compare.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Compare</a>
+          <a href="../blog.html" class="px-3 py-2 rounded-md text-sm font-medium bg-cyan-500/10 text-cyan-400">Blog</a>
+          <a href="../toolbox.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Toolbox</a>
+          <a href="../monetization.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Monetization</a>
+          <a href="../sitemap.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Sitemap</a>
+        </div>
+      </div>
     </div>
-    <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
+  </nav>
+  <div class="bg-slate-900/50 border-b border-slate-800">
+    <div class="max-w-[728px] min-h-[90px] mx-auto my-2">
+      <script> atOptions = { key: '4428d04f24f7240a987e9ddf4e0c117c', format: 'iframe', height: 90, width: 728, params: {} }; </script>
+      <script src="https://www.highperformanceformat.com/4428d04f24f7240a987e9ddf4e0c117c/invoke.js"></script>
+    </div>
   </div>
-</nav>
-
-<!-- Article -->
-<div class="article-container">
-  <div class="back-nav"><a href="../blog.html">&#8592; Back to Blog</a></div>
-
-  <div class="article-meta">
-    <span class="article-category">How-To</span>
-    <span class="article-meta-text">2026-03-24</span>
-    <span class="article-meta-text">9 min read</span>
-  </div>
-  <h1 class="article-title">How to Connect to a 4K TV: Best Settings for Docked Mode Gaming</h1>
-  <div style="margin-bottom:32px"><span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">4K TV</span> <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">docked</span></div>
-
-  <div class="article-content">
-<h1>How to Connect to a 4K TV: Best Settings for &quot;Docked Mode&quot; Gaming</h1>
+  <main class="flex-1">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex items-center gap-2 text-xs text-slate-500 mb-6">
+        <a href="../index.html" class="hover:text-cyan-400 transition-colors">Home</a>
+        <span>/</span>
+        <a href="../blog.html" class="hover:text-cyan-400 transition-colors">Blog</a>
+        <span>/</span>
+        <span class="text-slate-400">How-To Guide</span>
+      </div>
+      <div class="mb-4"><span class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400">🔧 How-To</span></div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-tight">How to Connect to a 4K TV: Best Settings for Docked Mode Gaming</h1>
+      <div class="flex flex-wrap items-center gap-4 text-sm text-slate-400 mb-8 pb-6 border-b border-slate-800">
+        <span class="flex items-center gap-1.5">📅 2026-03-24</span>
+        <span class="flex items-center gap-1.5">⏱️ 9 min read</span>
+        <div class="flex flex-wrap gap-2"><span class="text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded">#4K TV</span><span class="text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded">#docked</span><span class="text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded">#setup</span></div>
+      </div>
+      <div class="my-6">
+        <div class="max-w-[300px] min-h-[250px] mx-auto">
+          <script> atOptions = { key: '5a80ce7f116946c73b77837f2eb661f6', format: 'iframe', height: 250, width: 300, params: {} }; </script>
+          <script src="https://www.highperformanceformat.com/5a80ce7f116946c73b77837f2eb661f6/invoke.js"></script>
+        </div>
+      </div>
+      <div class="article-content"><h1>How to Connect to a 4K TV: Best Settings for &quot;Docked Mode&quot; Gaming</h1>
 <p>Handhelds are designed for portability, but their USB-C ports output video signals that can drive 4K displays. A Steam Deck connected to a 65-inch OLED TV becomes a living-room console — one that draws a fraction of the power of a PlayStation 5 and produces less fan noise than most laptops. The key is understanding what these handheld APUs can realistically output, selecting the right dock for your TV and handheld, and configuring the settings that matter for big-screen play. A naive 4K setup produces a stuttery, overheated mess. A properly configured docked handheld delivers a genuinely enjoyable living-room experience for a wide range of titles.</p>
 <hr>
 <h2>Prerequisites</h2>
@@ -683,28 +655,58 @@ img{max-width:100%;height:auto}
 <li>Realistic expectations: the Steam Deck delivers roughly PlayStation 4-quality docked performance at 1080p, while the ROG Ally X and Legion Go 2 approach PlayStation 4 Pro levels with proper FSR configuration.</li>
 </ul>
 <p>Docked handheld gaming is not a replacement for a dedicated gaming PC or console. It is a versatility multiplier — the same device that fits in a backpack during the day becomes a living-room console at night, with a single cable connection and thirty seconds of setup.</p>
-
-  </div>
-
-  <div class="article-cta">
-    <h3>Compare products mentioned in this article</h3>
-    <p>Browse 50+ handheld gaming products with real-time pricing and specs.</p>
-    <a href="../compare.html" class="cta-btn">Go to Comparison &#8594;</a>
-  </div>
-
 </div>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div><img src="../logo.png" alt="Hand Held Mastery" style="height:32px;margin-bottom:12px"><p style="color:#64748b;font-size:14px">The definitive technical resource for handheld PC gaming.</p></div>
-      <div><h4>Quick Links</h4><a href="../index.html">Home</a><a href="../compare.html">Compare</a><a href="../blog.html">Blog</a><a href="../toolbox.html">Toolbox</a><a href="../sitemap.html">Sitemap</a></div>
-      <div><h4>Legal</h4><p style="color:#64748b;font-size:14px">This site contains affiliate links. We may earn a commission at no extra cost to you.</p></div>
+      <div class="my-6">
+        <div class="max-w-[300px] min-h-[250px] mx-auto">
+          <script> atOptions = { key: '5a80ce7f116946c73b77837f2eb661f6', format: 'iframe', height: 250, width: 300, params: {} }; </script>
+          <script src="https://www.highperformanceformat.com/5a80ce7f116946c73b77837f2eb661f6/invoke.js"></script>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-slate-800">
+        <h3 class="text-lg font-bold text-white mb-4">Recommended for You</h3>
+        <script async="async" data-cfasync="false" src="https://pl29763344.effectivecpmnetwork.com/8b7696e02f356d6562fb7d33ae23ef75/invoke.js"></script>
+        <div id="container-8b7696e02f356d6562fb7d33ae23ef75"></div>
+      </div>
+      <div class="mt-12 bg-gradient-to-r from-violet-900/20 to-cyan-900/20 border border-slate-800 rounded-2xl p-8 text-center">
+        <h3 class="text-xl font-bold text-white mb-2">Explore More on Hand Held Mastery</h3>
+        <p class="text-slate-400 text-sm mb-6">Compare products, discover optimization tools, and read all our in-depth guides.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="../compare.html" class="inline-flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-500 text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm">Compare Products</a>
+          <a href="../blog.html" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-slate-700 text-sm">Read More Articles</a>
+        </div>
+      </div>
     </div>
-    <div class="footer-bottom">&copy; 2026 Hand Held Mastery. All rights reserved.</div>
+  </main>
+  <div class="bg-slate-900/50 border-t border-slate-800">
+    <div class="max-w-[728px] min-h-[90px] mx-auto my-2">
+      <script> atOptions = { key: '4428d04f24f7240a987e9ddf4e0c117c', format: 'iframe', height: 90, width: 728, params: {} }; </script>
+      <script src="https://www.highperformanceformat.com/4428d04f24f7240a987e9ddf4e0c117c/invoke.js"></script>
+    </div>
   </div>
-</footer>
-
+  <footer class="bg-slate-900 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <img src="../logo.png" alt="Hand Held Mastery" class="h-8 w-auto mb-3" />
+          <p class="text-slate-400 text-sm">The definitive technical resource for handheld PC gaming consoles, accessories, and optimization guides.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-3">Quick Links</h3>
+          <div class="space-y-2">
+            <a href="../index.html" class="block text-slate-400 hover:text-cyan-400 text-sm">Home</a>
+            <a href="../compare.html" class="block text-slate-400 hover:text-cyan-400 text-sm">Compare Products</a>
+            <a href="../blog.html" class="block text-slate-400 hover:text-cyan-400 text-sm">Blog</a>
+            <a href="../toolbox.html" class="block text-slate-400 hover:text-cyan-400 text-sm">Gamer's Toolbox</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-3">Disclosure</h3>
+          <p class="text-slate-400 text-sm">This site contains affiliate links. We may earn a commission when you purchase through our links — at no extra cost to you. All reviews are independent and unsponsored.</p>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 mt-8 pt-6 text-center text-slate-500 text-sm">&copy; 2026 Hand Held Mastery. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="https://pl29763345.effectivecpmnetwork.com/ca/52/26/ca5226567c13e5d31689b0c86207ae74.js"></script>
 </body>
 </html>
