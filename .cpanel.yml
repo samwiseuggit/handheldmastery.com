@@ -1,5 +1,14 @@
 ---
 deployment:
   tasks:
-    - find /home/tamaduni/repositories/handheldmastery/mpa_dist -type d -exec chmod 755 {} \;
-    - find /home/tamaduni/repositories/handheldmastery/mpa_dist -type f -exec chmod 644 {} \;
+    # 1. Copy all files from mpa_dist/ to public_html/
+    - /bin/cp -R /home/tamaduni/repositories/handheldmastery/mpa_dist/* /home/tamaduni/public_html/
+    
+    # 2. Copy .htaccess if it exists in mpa_dist/
+    - /bin/cp /home/tamaduni/repositories/handheldmastery/mpa_dist/.htaccess /home/tamaduni/public_html/.htaccess 2>/dev/null || true
+    
+    # 3. Set directory permissions
+    - /usr/bin/find /home/tamaduni/public_html -type d -exec chmod 755 {} \;
+    
+    # 4. Set file permissions
+    - /usr/bin/find /home/tamaduni/public_html -type f -exec chmod 644 {} \;
